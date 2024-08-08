@@ -3,31 +3,36 @@
     padding: 0;
 }
 .navbar{
-    background-color: rgb(156, 156, 189);
-    height: 8vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
-    
+    box-shadow: 1px 2px 15px black;
 }
 .nav{
     width: 30%;
     padding-top:20px;
+    margin-right: 10%;
+}
+.nav img{
+    width: 30px;
 }
 .search{
-    width: 50%;
-    padding-top:15px;
+    width: 40%;
+    padding-top:20px;
 }
 .ss{
     text-align: left;
-    padding-right:90px;
+    padding-right:50%;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .log{
-    padding: 10px;
-    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: blue;
+    padding-top: 10px;
+    margin-left: 10%;
 }
 ul{
     font-family: Arial, Helvetica, sans-serif;
@@ -37,4 +42,91 @@ ul{
     justify-content: space-evenly;
     align-items:center;
     
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 2%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover{
+    transform: scale(1.1,1.05);
+}
+.card button{
+    padding:10px 13px;
+    background-color: black; 
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.card a{
+    text-decoration: none;
+}
+
+.pro{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:40% ;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+}
+.pro img{
+    width: 70%;
+    height: 80%;
+}
+.pro2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:60% ;
+    height: 90vh;
+    line-height: 5vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.b1{
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+    padding: 10px 70px;
+    background-color: rgb(255, 221, 0);
+    color: white;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+.b2{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    padding: 10px 90px;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+
+#pdetails{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.review{
+    margin-left: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.r{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.avail{
+    color: red;
 }
