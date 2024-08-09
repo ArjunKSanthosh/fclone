@@ -82,6 +82,11 @@ ul{
     border-radius: 8px;
 
 }
+.price{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
 .pro img{
     width: 85%;
     height: 70%;
@@ -93,8 +98,6 @@ ul{
     height: 90vh;
     line-height: 5vh;
     overflow-y: scroll;
-    scrollbar-width: none;
-
 }
 .b1{
     position: absolute;
@@ -136,4 +139,8 @@ ul{
 }
 .avail{
     color: red;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
 }
