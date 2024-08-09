@@ -9,7 +9,7 @@ async function fetchProducts(){
             <img src="${product.thumbnail}" alt="">
             <h3>${product.title.substring(0,15)}</h3>
             <p>$${product.price}</p>
-            <a href="./shop.html""><button >More details</button></a>
+            <a href="./shop.html?id=${product.id}"><button >More details</button></a>
         </div>`
         })
         document.getElementById("products").innerHTML=str;
