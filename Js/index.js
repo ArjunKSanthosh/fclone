@@ -30,7 +30,7 @@ document.getElementById("sear").addEventListener('keyup',async(e)=>{
             <img src="${product.thumbnail}" alt="">
             <h3>${product.title.substring(0,15)}</h3>
             <p>$${product.price}</p>
-            <a href="./html/product.html"><button >More details</button></a>
+            <a href="./html/product.html?id=${product.id}"><button >More details</button></a>
         </div>`
         })
 

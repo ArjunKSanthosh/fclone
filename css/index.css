@@ -7,7 +7,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 2px 15px black;
+    box-shadow: 1px 0.5px 4px black;
 }
 .nav{
     width: 30%;
@@ -72,14 +72,20 @@ ul{
 
 .pro{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width:40% ;
-    height: 90vh;
+    width:27% ;
+    height: 70vh;
     position: relative;
     text-align: center;
+    box-shadow: 2px 1px 8px black;
+    margin-left: 8%;
+    margin-top: 2%;
+    border-radius: 8px;
+
 }
 .pro img{
-    width: 70%;
-    height: 80%;
+    width: 85%;
+    height: 70%;
+    margin-top: 12%;
 }
 .pro2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,12 +94,13 @@ ul{
     line-height: 5vh;
     overflow-y: scroll;
     scrollbar-width: none;
+
 }
 .b1{
     position: absolute;
     bottom: 2%;
     left: 3%;
-    padding: 10px 70px;
+    padding: 10px 40px;
     background-color: rgb(255, 221, 0);
     color: white;
     font-weight: bolder;
@@ -103,7 +110,7 @@ ul{
     position: absolute;
     bottom: 2%;
     right: 2%;
-    padding: 10px 90px;
+    padding: 10px 70px;
     background-color: orange;
     color: white;
     font-weight: bolder;

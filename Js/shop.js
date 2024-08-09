@@ -1,6 +1,8 @@
 async function fetchProducts(){
     try {
-        const res=await fetch('https://dummyjson.com/products')
+        // const urlParams=new URLSearchParams(window.location.search)
+        // id=urlParams.get('id');
+        const res=await fetch(`https://dummyjson.com/products/${id}`)
         const products=await res.json();
         str=``
         str+= `<div class="pro">
@@ -35,6 +37,7 @@ async function fetchProducts(){
     </div>
 </div>`
 document.getElementById("pdetails").innerHTML=str;
+// document.getElementById("img").src=products.thumbnail
 
 } catch (error) {
     console.log(error);
