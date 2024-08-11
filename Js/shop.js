@@ -23,17 +23,20 @@ document.getElementById("a7").innerHTML=`Brand:${products.brand}`
 document.getElementById("a8").innerHTML=`Sku:${products.sku}`
 document.getElementById("a9").innerHTML=`Warranty Information:${products.warrantyInformation}`
 document.getElementById("a0").innerHTML=`Shipping Information:${products.shippingInformation}`
-document.getElementById("hh").innerHTML=`Review`
-
-document.getElementById("b9").innerHTML=`Name:${products.reviewerName}`
-document.getElementById("b0").innerHTML=`Email:${products.reviewerEmail}`
-document.getElementById("b3").innerHTML=`Date:${products.date}`
-document.getElementById("b4").innerHTML=`Comment:${products.comment}`
+str=``
+products.reviews.map((p)=>{
+str+=`<div class="review">
+    <p><b>Name:</b>${p.reviewerName}</p>
+    <p><b>Email:</b>${p.reviewerEmail}</p>
+    <p><b>Date:</b>${p.date}</p>
+    <p><b>Comment:</b>${p.comment}</p>
+    </div>`
+})
+document.getElementById("review").innerHTML=str;
 
 document.getElementById("b5").innerHTML=`Return Policy:${products.returnPolicy}`
 document.getElementById("b6").innerHTML=`Minimum Order Quantity:${products.minimumOrderQuantity}`
-document.getElementById("b7").src=products.qrCode
-
+document.getElementById("b7").src=`${products.meta.qrCode}`
 
 
 

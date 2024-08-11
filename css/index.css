@@ -127,8 +127,11 @@ ul{
     justify-content: space-between;
 
 }
+.rev{
+    display: flex;
+    justify-content: space-between;
+}
 .review{
-    margin-left: 40%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .r{
