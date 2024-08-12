@@ -1,19 +1,25 @@
 let products
 async function fetchProducts() {
     try {
-        console.log(window.location);
+        // console.log(window.location);
 
         const urlParams = new URLSearchParams(window.location.search)
         id = urlParams.get('id');
         const res = await fetch(`https://dummyjson.com/products/${id}`)
 
         products = await res.json();
-        console.log(products.title);
+        str1=``
+        products.images.map((i)=>{
+          
         
-            document.getElementById("a1").innerHTML = products.title
+            str1+=`<img onmouseover="changeImage('${i}')" src="${i}" alt="">`
+        })
+        document.getElementById("pr").innerHTML=str1;
+        document.getElementById("img").src=products.thumbnail;
+        document.getElementById("a1").innerHTML = products.title
         document.getElementById("a2").innerHTML = products.description
         document.getElementById("a3").innerHTML = `Category:${products.category}`
-        document.getElementById("a4").innerHTML = `${products.price}`
+        document.getElementById("a4").innerHTML = `Price:${products.price}`
         document.getElementById("a41").innerHTML = `<strike>7.17%</strike>`
         document.getElementById("a5").innerHTML = `Rating:${products.rating}`
         document.getElementById("a5").innerHTML = `Rating:${products.rating}`
@@ -35,23 +41,19 @@ async function fetchProducts() {
 
         document.getElementById("b5").innerHTML = `Return Policy:${products.returnPolicy}`
         document.getElementById("b6").innerHTML = `Minimum Order Quantity:${products.minimumOrderQuantity}`
-        document.getElementById("b7").src = `${products.meta.qrCode}`
-    
-
-
-document.getElementById("img").src=products.thumbnail
-
-
-
+        // document.getElementById("b7").src = `${products.meta.qrCode}`
 } catch (error) {
     console.log(error);
 }
 }
 fetchProducts();
 
+function changeImage(img){
+    document.getElementById("img").src=img;
+}
 function addToCart(){
     console.log(products);
     localStorage.setItem(products.id,JSON.stringify(products));
-    window.location.href='./cart.html'
+    window.location.href='./cart.html';
     
 }
