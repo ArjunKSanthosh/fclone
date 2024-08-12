@@ -7,21 +7,27 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 0.5px 4px black;
+    box-shadow: 1px 0.5px 4px black;   
+     background-color: rgb(53, 53, 111);
+    
 }
 .nav{
+
     width: 30%;
     padding-top:20px;
     margin-right: 10%;
+  
 }
 .nav img{
     width: 30px;
 }
 .search{
+ 
     width: 40%;
     padding-top:20px;
 }
 .ss{
+  
     text-align: left;
     padding-right:50%;
     padding-top: 5px;
@@ -30,13 +36,13 @@
 .log{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
-    color: blue;
+    color: white;
     padding-top: 10px;
     margin-left: 10%;
 }
 ul{
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
-    color: black    ;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
@@ -44,6 +50,7 @@ ul{
     
 }
 #products{
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,7 +63,7 @@ ul{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card:hover{
-    transform: scale(1.1,1.05);
+    transform: scale(1.02);
 }
 .card button{
     padding:10px 13px;
@@ -72,17 +79,18 @@ ul{
 
 .pro{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width:27% ;
+    width:30% ;
     height: 70vh;
     position: relative;
     text-align: center;
     box-shadow: 2px 1px 8px black;
-    margin-left: 8%;
+    margin-left: 3%;
     margin-top: 2%;
     border-radius: 8px;
 
 }
 .price{
+
     display: flex;
     justify-content: space-between;
     width: 15%;
@@ -93,8 +101,9 @@ ul{
     margin-top: 12%;
 }
 .pro2{
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width:60% ;
+    width:65% ;
     height: 90vh;
     line-height: 5vh;
     overflow-y: scroll;
