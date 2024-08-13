@@ -17,15 +17,15 @@ async function fetchProducts() {
         document.getElementById("a1").innerHTML = products.title
         document.getElementById("a2").innerHTML = products.description
         document.getElementById("a3").innerHTML = `Category:${products.category}`
-        document.getElementById("a4").innerHTML = `Price:${products.price}`
+        document.getElementById("a4").innerHTML = `Price:$${products.price}`
         document.getElementById("a41").innerHTML = `<strike>7.17%</strike>`
         document.getElementById("a5").innerHTML = `Rating:${products.rating}`
         document.getElementById("a5").innerHTML = `Rating:${products.rating}`
-        document.getElementById("a6").innerHTML = `Stock:${products.stock}`
-        document.getElementById("a7").innerHTML = `Brand:${products.brand}`
-        document.getElementById("a8").innerHTML = `Sku:${products.sku}`
-        document.getElementById("a9").innerHTML = `Warranty Information:${products.warrantyInformation}`
-        document.getElementById("a0").innerHTML = `Shipping Information:${products.shippingInformation}`
+        document.getElementById("a6").innerHTML =  `<img src="./img/ftag.png" alt="" class="m1"> Stock:${products.stock}`
+        document.getElementById("a7").innerHTML = `<img src="./img/ftag.png" alt="" class="m1"> Brand:${products.brand}`
+        document.getElementById("a8").innerHTML = `<img src="./img/ftag.png" alt="" class="m1"> Sku:${products.sku}`
+        document.getElementById("a9").innerHTML = `<img src="./img/ftag.png" alt="" class="m1"> Warranty Information:${products.warrantyInformation}`
+        document.getElementById("a0").innerHTML = `<img src="./img/ftag.png" alt="" class="m1"> Shipping Information:${products.shippingInformation}`
         str = ``
         products.reviews.map((p) => {
             str += `<div class="review">

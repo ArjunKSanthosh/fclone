@@ -16,13 +16,14 @@ function getCart(){
             <div class="spec">
                 <h2>${value.title.substring(0,15)}</h2>
                 <p> <span class="f1">Price:</span> $ ${value.price}</p>
+                <p class="f2">${value.description.substring(0,90)}</p>
             </div>
 
 
 
             <div class="btrn1">
 
-                <button id="btr" onclick="removeCart(${value.id})">REMOVE FROM CART</button>
+                <button id="btr" onclick="removeCart(${value.id})">REMOVE</button>
 
             </div>
 
