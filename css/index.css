@@ -211,7 +211,7 @@ ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 40%;
+    width: 90%;
     height: 20vh;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
     /* margin-bottom: %; */
@@ -252,4 +252,39 @@ ul{
 .m1{
     width: 20px;
     height: 17px;
+}
+.main1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#add{
+    width: 50%;
+}
+.details{
+    width: 40%;
+}
+table{
+    margin-left: 38%;
+}
+.cp{
+    margin-left: 38%;
+}
+.payment button{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 8px 15px;
+    margin-top: 2%;
+}
+.qnty{
+    border-radius: 100px;
+    width: 150px;
+    height: 25vh;
+    /* height: 150px; */
+}
+.qnty img{
+    width: 50px;
+    height: 5vh;
 }
