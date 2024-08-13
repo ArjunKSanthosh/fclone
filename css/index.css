@@ -70,7 +70,7 @@ ul{
 .card img{
     width: 150px;
 }
-.card img:hover{
+.card:hover{
     transform: scale(1.09);
     transition: 0.2s;
 }
@@ -263,6 +263,10 @@ ul{
 }
 .details{
     width: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 30vh;
+    border-radius: 10px;
 }
 table{
     margin-left: 38%;
@@ -279,12 +283,18 @@ table{
     margin-top: 2%;
 }
 .qnty{
-    border-radius: 100px;
-    width: 150px;
-    height: 25vh;
-    /* height: 150px; */
+    background-color: black;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
 }
 .qnty img{
-    width: 50px;
-    height: 5vh;
+    width: 20px;
+    height: 16px;
+    
+}
+.tbb{
+    border-collapse:collapse;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
