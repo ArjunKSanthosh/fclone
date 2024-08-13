@@ -10,8 +10,6 @@ async function fetchProducts() {
         products = await res.json();
         str1=``
         products.images.map((i)=>{
-          
-        
             str1+=`<img onmouseover="changeImage('${i}')" src="${i}" alt="">`
         })
         document.getElementById("pr").innerHTML=str1;
